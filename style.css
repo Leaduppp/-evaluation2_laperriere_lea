@@ -230,3 +230,199 @@ main section .bas .articles .article button {
   padding: 13px;
   border-radius: 30px;
 }
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    justify-content: center;
+  }
+  header nav ul li a {
+    margin: 24px 16px 10px 16px;
+    font-size: 10px;
+  }
+  main {
+    display: flex;
+  }
+  main section {
+    position: relative;
+  }
+  main section .fond {
+    position: relative;
+  }
+  main section .fond .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(80%);
+    height: 100%;
+    width: 100%;
+  }
+  main section .fond .image img {
+    height: 50%;
+    width: 41%;
+    object-fit: cover;
+  }
+  main section .fond .filtre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 41%;
+    height: 50%;
+    background-color: #C1F7D5;
+    opacity: 0.3;
+  }
+  main section .fond .interieur {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+  main section .fond .carreblanc {
+    width: 144px;
+    height: 116px;
+    background: white;
+  }
+  main section .fond .carreblanc .carrebleu {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    height: 20px;
+    width: 70px;
+    background-color: #354463;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 24px;
+    margin-top: -12px;
+  }
+  main section .fond .carreblanc .carrebleu .issue {
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 9px;
+    font-size: 14px;
+  }
+  main section .fond .carreblanc .h {
+    color: #354463;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-align: left;
+    margin-top: 76px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  main section .fond .carreblanc a {
+    margin-left: 64px;
+    color: #354463;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  main section .fond .slogan {
+    transform: translate(-70px, -97px);
+  }
+  main section .fond .slogan .img {
+    width: 100%;
+  }
+  main section .container {
+    background: #C1F7D5;
+    position: relative;
+  }
+  main section .container .action {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+    width: 160px;
+    background-color: #354463;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 640px;
+    margin-top: -20px;
+    line-height: 40px;
+  }
+  main section .container .rectanglevert {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 160px 78px 160px;
+    height: 240px;
+  }
+  main section .container .rectanglevert .first {
+    margin: 31px 0 ;
+    width: 232px;
+    height: 97;
+    font-family: 'Open Sans', sans-serif;
+    color: #354463;
+  }
+  main section .container .rectanglevert .first h3 {
+    font-weight: 800;
+    font-size: 28px;
+  }
+  main section .container .rectanglevert .first p {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  main section .bas {
+    position: relative;
+  }
+  main section .bas .wwd {
+    margin-top: 88px;
+  }
+  main section .bas .wwd p {
+    background: #FFFFFF;
+    height: 40px;
+    width: 160px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 160px;
+    color: #354463;
+    line-height: 40px;
+    font-size: 14px;
+  }
+  main section .bas h2 {
+    font-size: 38px;
+    margin-top: 40px;
+    margin-left: 160px;
+    margin-right: 122px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+  }
+  main section .bas .articles {
+    display: flex;
+    justify-content: space-around;
+    padding: 76px 158px 147px 160px;
+  }
+  main section .bas .articles .article {
+    background: #FFFFFF;
+    height: 528px;
+    width: 320px;
+  }
+  main section .bas .articles .article img {
+    margin-left: 32px;
+    margin-top: -32px;
+  }
+  main section .bas .articles .article h3 {
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 32px;
+    color: #354463;
+  }
+  main section .bas .articles .article p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: #354463;
+  }
+  main section .bas .articles .article button {
+    margin-left: 32px;
+    background: #C1F7D5;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    height: 48px;
+    width: 160px;
+    padding: 13px;
+    border-radius: 30px;
+  }
+}

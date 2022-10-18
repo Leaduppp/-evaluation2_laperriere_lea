@@ -261,3 +261,225 @@ main {
     }
 }
 
+@media screen and(max-width:768px) {
+    header {
+        nav{
+            ul{
+                display: flex;
+                li{
+                    justify-content: center;
+                    a{
+                        margin: 24px 16px 10px 16px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+    display: flex;
+    section {
+        position: relative;
+        .fond {
+            position: relative;
+
+            .image {
+                position: absolute;
+                top:0;
+                left: 0;
+                filter: grayscale(80%);
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 50%;
+                    width: 41%;
+                    object-fit: cover;
+                }
+            }
+            .filtre {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 41%;
+                height: 50%;
+                background-color: #C1F7D5;
+                opacity: 0.3;
+            }
+            .interieur {
+                position: relative;
+                z-index: 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 20px 0;
+            }
+            .carreblanc {
+                width: 144px;
+                height: 116px;
+                background: white;
+
+    
+                .carrebleu {
+                    position: absolute;
+                    font-family: @family;
+                    height: 20px;
+                    width: 70px;
+                    background-color: #354463;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-left: 24px;
+                    margin-top: -12px;
+    
+                    .issue {
+                        position: absolute;
+                        margin-left: 48px;
+                        margin-top: 9px;
+                        font-size: 14px;
+                    }
+                }
+    
+                .h {
+                    color: #354463;
+                    font-family: @family;
+                    font-size: 40px;
+                    text-align: center;
+                    text-align:left;
+                    margin-top: 76px;
+                    margin-left: 64px;
+                    margin-right: 64px;
+                }
+                a {
+                    margin-left: 64px;
+                    color:#354463;
+                    font-family: @family;
+                    font-size: 16px;
+    
+                }
+            } 
+            
+            .slogan {
+                transform: translate(-70px, -97px);
+                
+                .img {
+                    width: 100%;
+                }
+            }
+        }
+        
+
+        .container {
+             background: #C1F7D5;
+             position: relative;
+
+             .action {
+                position: absolute;
+                font-family: @family;
+                height: 40px;
+                width: 160px;
+                background-color: #354463;
+                text-align: center;
+                color: #FFFFFF;
+                margin-left: 640px;
+                margin-top: -20px;
+                line-height: 40px;
+
+             }
+             
+             .rectanglevert {
+                display: flex;
+                justify-content: space-around;
+                margin: 0px 160px 78px 160px;
+                height: 240px;
+
+                .first {
+                    margin: 31px 0 ;
+                    width: 232px;
+                    height: 97;
+                    font-family: @family;
+                    color: #354463;
+                    h3 {
+                        font-weight: 800;
+                        font-size: 28px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                }
+             }
+         }
+
+         .bas{
+            position: relative;
+            .wwd {
+                margin-top: 88px;
+                p {
+                    background: #FFFFFF;
+                    height: 40px;
+                    width: 160px;
+                    text-align: center;
+                    font-family: @family;
+                    margin-left: 160px;
+                    color: #354463;
+                    line-height: 40px;
+                    font-size: 14px;
+                }
+
+            }
+            h2 {
+                font-size: 38px;
+                margin-top: 40px;
+                margin-left: 160px;
+                margin-right: 122px;
+                color: #FFFFFF;
+                font-family: @family;
+            }
+
+            .articles{
+                display: flex;
+                justify-content: space-around;
+                padding: 76px 158px 147px 160px;
+                .article {
+                    background: #FFFFFF;
+                    height: 528px;
+                    width: 320px;
+                    img {
+                        margin-left: 32px;
+                        margin-top: -32px;
+                    }
+                    h3 {
+                        font-size: 26px;
+                        font-family: @family;
+                        font-weight: 700;
+                        margin-left: 32px;
+                        color: #354463;
+                    }
+                    p {
+                        font-family: @family;
+                        font-size: 14px;
+                        margin-left: 32px;
+                        margin-right: 32px;
+                        color: #354463;
+                    }
+                    button {
+                        margin-left: 32px;
+                        background: #C1F7D5;
+                        border: none;
+                        font-size: 18px;
+                        font-weight: bold;
+                        height: 48px;
+                        width: 160px;
+                        padding: 13px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+         }
+
+    }
+}
+}
+
