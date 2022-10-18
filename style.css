@@ -1,7 +1,6 @@
 Body {
   background: #354463;
-  height: 2099px;
-  width: 1440px;
+  margin: 0;
 }
 ul,
 li {
@@ -14,6 +13,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #FFFFFF;
+  width: auto;
   height: 128px;
   margin-top: -0.55%;
 }
@@ -52,32 +52,45 @@ main {
 main section {
   position: relative;
 }
-main section .image {
-  width: 1440px;
-  height: 672px;
-  position: absolute;
-  filter: grayscale(80%);
+main section .fond {
+  position: relative;
 }
-main section .image .child {
+main section .fond .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(80%);
+  height: 100%;
+  width: 100%;
+}
+main section .fond .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main section .fond .filtre {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-}
-main section .filtre {
-  position: absolute;
-  width: 1440px;
-  height: 672px;
   background-color: #C1F7D5;
-  opacity: 0.6;
+  opacity: 0.3;
 }
-main section .carreblanc {
+main section .fond .interieur {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+main section .fond .carreblanc {
   width: 544px;
   height: 416px;
   background: white;
-  margin-top: 128px;
-  margin-left: 160px;
-  position: absolute;
 }
-main section .carreblanc .carrebleu {
+main section .fond .carreblanc .carrebleu {
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   height: 40px;
@@ -88,13 +101,13 @@ main section .carreblanc .carrebleu {
   margin-left: 64px;
   margin-top: -16px;
 }
-main section .carreblanc .carrebleu .issue {
+main section .fond .carreblanc .carrebleu .issue {
   position: absolute;
   margin-left: 48px;
   margin-top: 9px;
   font-size: 14px;
 }
-main section .carreblanc .h {
+main section .fond .carreblanc .h {
   color: #354463;
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
@@ -104,26 +117,21 @@ main section .carreblanc .h {
   margin-left: 64px;
   margin-right: 64px;
 }
-main section .carreblanc a {
+main section .fond .carreblanc a {
   margin-left: 64px;
   color: #354463;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-main section .slogan {
-  position: absolute;
-  margin-left: 839px;
-  margin-top: 136px;
+main section .fond .slogan {
+  transform: translate(-70px, -97px);
 }
-main section .slogan .img {
+main section .fond .slogan .img {
   width: 100%;
 }
 main section .container {
   background: #C1F7D5;
   position: relative;
-  margin-top: 672px;
-  width: 1440px;
-  height: 240px;
 }
 main section .container .action {
   position: absolute;
@@ -140,7 +148,7 @@ main section .container .action {
 main section .container .rectanglevert {
   display: flex;
   justify-content: space-around;
-  margin: 75px 160px 78px 160px;
+  margin: 0px 160px 78px 160px;
   height: 240px;
 }
 main section .container .rectanglevert .first {

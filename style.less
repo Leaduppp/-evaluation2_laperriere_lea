@@ -1,7 +1,6 @@
 Body {
     background: #354463;
-    height: 2099px;
-    width: 1440px;
+    margin: 0;
 }
 
 ul, li {
@@ -17,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
+    width: auto;
     height: 128px;
     margin-top: -0.55%;
 
@@ -60,84 +60,97 @@ main {
     display: flex;
     section {
         position: relative;
-        .image {
-            width: 1440px;
-            height: 672px;
-            position: absolute;
-            filter: grayscale(80%);
-            .child{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .filtre {
-            position: absolute;
-            width: 1440px;
-            height: 672px;
-            background-color: #C1F7D5;
-            opacity: 0.6;
-        }
-        .carreblanc {
-            width: 544px;
-            height: 416px;
-            background: white;
-            margin-top: 128px;
-            margin-left: 160px;
-            position:absolute;
+        .fond {
+            position: relative;
 
-            .carrebleu {
+            .image {
                 position: absolute;
-                font-family: @family;
-                height: 40px;
-                width: 160px;
-                background-color: #354463;
-                text-align: center;
-                color: #FFFFFF;
-                margin-left: 64px;
-                margin-top: -16px;
+                top:0;
+                left: 0;
+                filter: grayscale(80%);
+                height: 100%;
+                width: 100%;
 
-                .issue {
-                    position: absolute;
-                    margin-left: 48px;
-                    margin-top: 9px;
-                    font-size: 14px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
                 }
             }
-
-            .h {
-                color: #354463;
-                font-family: @family;
-                font-size: 40px;
-                text-align: center;
-                text-align:left;
-                margin-top: 76px;
-                margin-left: 64px;
-                margin-right: 64px;
-            }
-            a {
-                margin-left: 64px;
-                color:#354463;
-                font-family: @family;
-                font-size: 16px;
-
-            }
-        } 
-        
-        .slogan {
-            position: absolute;
-            margin-left: 839px;
-            margin-top: 136px;
-            .img {
+            .filtre {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
+                height: 100%;
+                background-color: #C1F7D5;
+                opacity: 0.3;
+            }
+            .interieur {
+                position: relative;
+                z-index: 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 100px 0;
+            }
+            .carreblanc {
+                width: 544px;
+                height: 416px;
+                background: white;
+
+    
+                .carrebleu {
+                    position: absolute;
+                    font-family: @family;
+                    height: 40px;
+                    width: 160px;
+                    background-color: #354463;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-left: 64px;
+                    margin-top: -16px;
+    
+                    .issue {
+                        position: absolute;
+                        margin-left: 48px;
+                        margin-top: 9px;
+                        font-size: 14px;
+                    }
+                }
+    
+                .h {
+                    color: #354463;
+                    font-family: @family;
+                    font-size: 40px;
+                    text-align: center;
+                    text-align:left;
+                    margin-top: 76px;
+                    margin-left: 64px;
+                    margin-right: 64px;
+                }
+                a {
+                    margin-left: 64px;
+                    color:#354463;
+                    font-family: @family;
+                    font-size: 16px;
+    
+                }
+            } 
+            
+            .slogan {
+                transform: translate(-70px, -97px);
+                
+                .img {
+                    width: 100%;
+                }
             }
         }
+        
 
         .container {
              background: #C1F7D5;
              position: relative;
-             margin-top: 672px;
-             width: 1440px;
-             height: 240px;
 
              .action {
                 position: absolute;
@@ -156,7 +169,7 @@ main {
              .rectanglevert {
                 display: flex;
                 justify-content: space-around;
-                margin: 75px 160px 78px 160px;
+                margin: 0px 160px 78px 160px;
                 height: 240px;
 
                 .first {
@@ -247,3 +260,4 @@ main {
 
     }
 }
+
